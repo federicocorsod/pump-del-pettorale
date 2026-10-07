@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Pump del Pettorale di Federico Corso: video-allenamento a corpo libero con un solo esercizio, la navetta. Come finisher in palestra o da solo, ovunque.">
+<meta property="og:title" content="Pump del Pettorale — Federico Corso">
+<meta property="og:description" content="Video-allenamento a corpo libero per il pettorale. 19,99 €.">
+<meta property="og:image" content="https://federicocorsod.github.io/pump-del-pettorale/img/copertina.jpg">
+<title>Pump del Pettorale</title>
+<link rel="stylesheet" href="fonts/fonts.css">
+<style>
+  :root {
+    color-scheme: dark;
+    --ink: #0c0b09;
+    --ink-2: #15130f;
+    --line: #2a261e;
+    --gold: #c8a560;
+    --gold-soft: #a88a4f;
+    --ivory: #f1ece2;
+    --muted: #9a9284;
+    --display: "Bodoni Moda", "Didot", "Bodoni 72", Georgia, serif;
+    --body: "Jost", "Futura", "Century Gothic", system-ui, sans-serif;
+  }
+  * { box-sizing: border-box; }
+  html { background: var(--ink); }
+  body {
+    margin: 0;
+    background: var(--ink);
+    color: var(--ivory);
+    font-family: var(--body);
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 1.6;
+    padding-inline: 20px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 560px; margin: 0 auto; padding-block: 28px 56px; }
+
+  .brand {
+    display: flex; justify-content: space-between; align-items: baseline;
+    gap: 12px; flex-wrap: wrap;
+    font-size: 11px; letter-spacing: .32em; text-transform: uppercase;
+    padding-bottom: 18px; border-bottom: 1px solid var(--line);
+  }
+  .brand strong { font-weight: 500; color: var(--ivory); }
+  .brand a { color: var(--gold); text-decoration: none; letter-spacing: .12em; text-transform: none; font-size: 13px; }
+  .brand a:hover, .brand a:focus-visible { text-decoration: underline; text-underline-offset: 4px; }
+
+  .cover { margin: 28px 0 0; position: relative; }
+  .cover img { display: block; width: 100%; height: auto; aspect-ratio: 3 / 2; object-fit: cover; border: 1px solid var(--line); }
+  .cover::after { content: ""; position: absolute; inset: 5px; border: 1px solid rgba(200,165,96,.28); pointer-events: none; }
+
+  .hero { padding-block: 36px 8px; }
+  .eyebrow {
+    font-size: 11px; letter-spacing: .34em; text-transform: uppercase; color: var(--gold);
+    margin: 0 0 18px;
+  }
+  h1 {
+    font-family: var(--display); font-weight: 400;
+    font-size: clamp(46px, 13vw, 76px); line-height: .95; letter-spacing: -.01em;
+    margin: 0; text-wrap: balance;
+  }
+  h1 em { display: block; font-style: italic; color: var(--gold); }
+  .lede { color: #cfc8ba; margin: 26px 0 0; max-width: 34em; }
+
+  .offer {
+    margin-top: 40px; padding: 26px 22px 24px;
+    background: var(--ink-2); border: 1px solid var(--line);
+    position: relative;
+  }
+  .offer::before {
+    content: ""; position: absolute; inset: 5px; border: 1px solid rgba(200,165,96,.22); pointer-events: none;
+  }
+  .price-row { display: flex; align-items: baseline; gap: 14px; flex-wrap: wrap; }
+  .now { font-family: var(--display); font-size: 54px; line-height: 1; color: var(--ivory); font-variant-numeric: lining-nums; }
+  .now small { font-size: .45em; margin-left: 4px; color: var(--gold); }
+  .offer-note { color: var(--muted); font-size: 13px; margin: 10px 0 22px; }
+
+  .cta {
+    display: flex; justify-content: center; align-items: center; gap: 10px;
+    width: 100%; padding: 18px 20px;
+    background: var(--gold); color: var(--ink);
+    font-family: var(--body); font-weight: 500; font-size: 14px; letter-spacing: .22em; text-transform: uppercase;
+    text-decoration: none; border: 0; cursor: pointer;
+    transition: background .25s ease, transform .25s ease;
+  }
+  .cta:hover { background: #d8b873; }
+  .cta:active { transform: translateY(1px); }
+  .cta:focus-visible { outline: 2px solid var(--ivory); outline-offset: 3px; }
+  .secure { text-align: center; font-size: 12px; color: var(--muted); margin: 12px 0 0; letter-spacing: .04em; }
+
+  h2 {
+    font-family: var(--display); font-weight: 400; font-size: 30px; line-height: 1.1;
+    margin: 0 0 22px; text-wrap: balance;
+  }
+  h2 em { color: var(--gold); }
+  section.block { padding-top: 56px; }
+
+  .facts { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); margin-top: 44px; }
+  .facts div { padding: 16px 8px; text-align: center; }
+  .facts div + div { border-left: 1px solid var(--line); }
+  .facts b { display: block; font-family: var(--display); font-weight: 400; font-size: 26px; color: var(--gold); line-height: 1.1; }
+  .facts span { font-size: 10.5px; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); }
+
+  .areas { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
+  .areas li { padding: 20px 0; border-top: 1px solid var(--line); display: grid; grid-template-columns: 92px 1fr; gap: 16px; }
+  .areas li:last-child { border-bottom: 1px solid var(--line); }
+  .areas .k { font-size: 10.5px; letter-spacing: .22em; text-transform: uppercase; color: var(--gold); padding-top: 5px; }
+  .areas h3 { margin: 0 0 4px; font-weight: 500; font-size: 17px; letter-spacing: .01em; }
+  .areas p { margin: 0; color: #c2bbad; font-size: 15px; }
+
+  .steps { list-style: none; margin: 0; padding: 0; counter-reset: s; display: grid; gap: 26px; }
+  .steps li { counter-increment: s; display: grid; grid-template-columns: 44px 1fr; gap: 14px; }
+  .steps li::before {
+    content: counter(s); font-family: var(--display); font-style: italic; font-size: 34px; line-height: 1; color: var(--gold);
+  }
+  .steps h3 { margin: 2px 0 4px; font-weight: 500; font-size: 17px; }
+  .steps p { margin: 0; color: #c2bbad; font-size: 15px; }
+
+  .clause {
+    margin-top: 34px; padding: 18px 20px; border-left: 1px solid var(--gold);
+    font-size: 14px; color: #c2bbad; background: linear-gradient(90deg, rgba(200,165,96,.07), transparent 70%);
+  }
+  .clause strong { color: var(--ivory); font-weight: 500; }
+
+  .final { margin-top: 56px; text-align: center; }
+  .final .now { font-size: 40px; }
+  .final .price-row { justify-content: center; margin-bottom: 20px; }
+
+  footer {
+    margin-top: 56px; padding-top: 20px; border-top: 1px solid var(--line);
+    display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap;
+    font-size: 12px; color: var(--muted); letter-spacing: .04em;
+  }
+  footer a { color: var(--gold); text-decoration: none; }
+  .legal-note { text-align: center; font-size: 12px; color: var(--muted); margin: 8px 0 0; line-height: 1.5; }
+  .legal-note a, .seller a { color: var(--gold); }
+  .health { margin-top: 40px; font-size: 13px; color: var(--muted); line-height: 1.6; border-top: 1px solid var(--line); padding-top: 18px; }
+  .health strong { color: #c2bbad; font-weight: 500; }
+  .seller { width: 100%; font-size: 12px; line-height: 1.7; color: var(--muted); }
+  .seller strong { color: #c2bbad; font-weight: 500; }
+  .footer-links { display: flex; gap: 18px; flex-wrap: wrap; }
+  footer a:hover, footer a:focus-visible { text-decoration: underline; text-underline-offset: 3px; }
+
+  @media (max-width: 420px) {
+    .areas li { grid-template-columns: 1fr; gap: 6px; }
+    .areas .k { padding-top: 0; }
+    .facts b { font-size: 22px; }
+    .facts span { letter-spacing: .12em; }
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .cover, .hero > *, .offer { animation: rise .9s cubic-bezier(.2,.7,.2,1) both; }
+    .hero .eyebrow { animation-delay: .08s; }
+    .hero h1 { animation-delay: .14s; }
+    .hero .lede { animation-delay: .22s; }
+    .offer { animation-delay: .32s; }
+    @keyframes rise { from { opacity: .001; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+  }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header class="brand">
+    <strong>Federico Corso</strong>
+    <a href="https://www.instagram.com/fede_corsius/" target="_blank" rel="noopener">@fede_corsius</a>
+  </header>
+
+  <figure class="cover">
+    <img src="img/copertina.jpg" srcset="img/copertina-800.jpg 800w, img/copertina.jpg 1400w" sizes="(max-width: 600px) 100vw, 560px" width="1400" height="934" alt="Pump del Pettorale: il petto di Federico Corso prima e dopo l'allenamento">
+  </figure>
+
+  <section class="hero">
+    <p class="eyebrow">Video-allenamento</p>
+    <h1>Pump del <em>Pettorale</em></h1>
+    <p class="lede">Un solo esercizio, la <strong>navetta</strong>, a corpo libero e senza attrezzi. Nel video ti mostro come eseguirla passo per passo. Puoi usarla come <strong>finisher</strong> alla fine della tua seduta di petto in palestra, per un pump extra, oppure come <strong>allenamento a sé</strong> a casa, al parco o dove vuoi.</p>
+
+    <div class="offer" id="acquista">
+      <div class="price-row">
+        <span class="now">19,99<small>€</small></span>
+      </div>
+      <p class="offer-note">Pagamento unico. Nessun abbonamento. Ricevi subito via email il tuo link personale per guardare il video.</p>
+      <a class="cta" href="STRIPE_PAYMENT_LINK">Acquista ora</a>
+      <p class="secure">Pagamento sicuro con Stripe · Carta, Apple Pay, Google Pay</p>
+      <p class="legal-note">Acquistando accetti le <a href="condizioni.html">Condizioni di vendita</a>. Trattandosi di contenuto digitale consegnato subito, al momento del pagamento rinunci al diritto di recesso.</p>
+    </div>
+  </section>
+
+  <div class="facts" aria-label="In breve">
+    <div><b>1</b><span>Esercizio</span></div>
+    <div><b>0</b><span>Attrezzi</span></div>
+    <div><b>Ovunque</b><span>Palestra · Casa · Parco</span></div>
+  </div>
+
+  <section class="block">
+    <h2>Come <em>usarlo</em></h2>
+    <ul class="areas">
+      <li>
+        <span class="k">Esercizio</span>
+        <div><h3>La navetta</h3><p>Un unico movimento a corpo libero, spiegato nel video, che mette il pettorale sotto tensione continua.</p></div>
+      </li>
+      <li>
+        <span class="k">In palestra</span>
+        <div><h3>Finisher dopo il petto</h3><p>Alla fine della seduta di petto, per dare al pettorale un pump aggiuntivo.</p></div>
+      </li>
+      <li>
+        <span class="k">Ovunque</span>
+        <div><h3>Allenamento a sé</h3><p>Per chi si allena a casa, al parco o in qualsiasi altro posto: niente attrezzi, ti basta il tuo corpo.</p></div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="block">
+    <h2>Come <em>funziona</em></h2>
+    <ol class="steps">
+      <li>
+        <div>
+          <h3>Tocca «Acquista ora»</h3>
+          <p>Si apre la pagina di pagamento sicura di Stripe, con i 19,99 € già inseriti.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3>Inserisci i tuoi dati e paga</h3>
+          <p>Email, nome e cognome, indirizzo e codice fiscale: servono per inviarti il video e la fattura. Puoi pagare con carta, Apple Pay o Google Pay.</p>
+        </div>
+      </li>
+      <li>
+        <div>
+          <h3>Guarda subito il video</h3>
+          <p>Appena il pagamento è confermato ricevi via email il tuo link personale: lo apri dal telefono o dal computer e guardi il video tutte le volte che vuoi.</p>
+        </div>
+      </li>
+    </ol>
+
+    <p class="clause"><strong>Accesso immediato e personale.</strong> Il link al video arriva in automatico all'email indicata durante il pagamento, pochi istanti dopo l'acquisto. Il link è solo tuo: non condividerlo. Se non trovi l'email (controlla anche la cartella spam), scrivi in direct a <strong>@fede_corsius</strong> su Instagram.</p>
+  </section>
+
+  <section class="final">
+    <div class="price-row">
+      <span class="now">19,99<small>€</small></span>
+    </div>
+    <a class="cta" href="STRIPE_PAYMENT_LINK">Acquista il video</a>
+    <p class="legal-note">Acquistando accetti le <a href="condizioni.html">Condizioni di vendita</a> e prendi visione dell'<a href="privacy.html">Informativa privacy</a>.</p>
+  </section>
+
+  <p class="health"><strong>Avvertenza sulla salute.</strong> Prima di iniziare questo o qualsiasi altro programma di allenamento consulta il tuo medico, soprattutto in presenza di patologie, infortuni, gravidanza o se non ti alleni da tempo. Esegui l'esercizio secondo le tue capacità e interrompi in caso di dolore, vertigini o malessere. Il video non sostituisce il parere di un medico o di un professionista sanitario. Il «pump» è un effetto temporaneo dell'allenamento e i risultati variano da persona a persona.</p>
+
+  <footer>
+    <p class="seller"><strong>Venditore:</strong> Federico Domenico Corso · Via Monte Grappa 21, 20900 Monza (MB), Italia · P.IVA 11572520960 · Email: <a href="mailto:federico.corso.d@gmail.com">federico.corso.d@gmail.com</a></p>
+    <span>© Federico Corso</span>
+    <span class="footer-links">
+      <a href="condizioni.html">Condizioni di vendita</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="https://www.instagram.com/fede_corsius/" target="_blank" rel="noopener">Instagram @fede_corsius</a>
+    </span>
+  </footer>
+</div>
+
+</body>
+</html>
