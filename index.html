@@ -97,11 +97,6 @@
   h2 em { color: var(--gold); }
   section.block { padding-top: 56px; }
 
-  .facts { display: grid; grid-template-columns: repeat(3, 1fr); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); margin-top: 44px; }
-  .facts div { padding: 16px 8px; text-align: center; }
-  .facts div + div { border-left: 1px solid var(--line); }
-  .facts b { display: block; font-family: var(--display); font-weight: 400; font-size: 26px; color: var(--gold); line-height: 1.1; }
-  .facts span { font-size: 10.5px; letter-spacing: .2em; text-transform: uppercase; color: var(--muted); }
 
   .areas { list-style: none; margin: 0; padding: 0; display: grid; gap: 0; }
   .areas li { padding: 20px 0; border-top: 1px solid var(--line); display: grid; grid-template-columns: 92px 1fr; gap: 16px; }
@@ -146,9 +141,7 @@
   @media (max-width: 420px) {
     .areas li { grid-template-columns: 1fr; gap: 6px; }
     .areas .k { padding-top: 0; }
-    .facts b { font-size: 22px; }
-    .facts span { letter-spacing: .12em; }
-  }
+      }
 
   @media (prefers-reduced-motion: no-preference) {
     .cover, .hero > *, .offer { animation: rise .9s cubic-bezier(.2,.7,.2,1) both; }
@@ -188,11 +181,6 @@
     </div>
   </section>
 
-  <div class="facts" aria-label="In breve">
-    <div><b>1</b><span>Esercizio</span></div>
-    <div><b>0</b><span>Attrezzi</span></div>
-    <div><b>Ovunque</b><span>Palestra · Casa · Parco</span></div>
-  </div>
 
   <section class="block">
     <h2>Come <em>usarlo</em></h2>
